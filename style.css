@@ -1,0 +1,132 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+.container{
+    width: 100%;
+    min-height: 120vh;
+    background: linear-gradient(135deg, #1f2441, #0070BB);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    box-shadow: ;
+}
+.music-player{
+    background: linear-gradient(140deg, #01497c, #01497c, #217DDE, #217DDE, #003566);
+    width: 400px;
+    padding: 25px 35px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 5px 10px #003566;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+nav .circle{
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    background: #fff;
+    color: #1f2441;
+    box-shadow: 0 5px 10px #003566;
+}
+
+.song-img{
+    width: 220px;
+    border-radius: 50%;
+    border: 6px solid #fff;
+    box-shadow: 0 10px 60px #003566;
+}
+
+.music-player h1{
+    font-size: 20px;
+    font-weight: 500;
+    color: #1f2441;
+    margin-top: 20px;
+}
+.music-player p{
+    font-size: 14px;
+    color: #333;
+}
+#progress{
+    -webkit-appearance: none;
+    width: 100%;
+    height: 6px;
+    background: #001D3D;
+    border-radius: 4px;
+    cursor: pointer;
+    margin: 46px 0;
+}
+
+#progress::-webkit-slider-thumb{
+    -webkit-appearance: none;
+    background: #1f2441;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: 4px solid #fff;
+    box-shadow: 0 5px 5px #003566;
+}
+.controls{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.controls div{
+    width: 60px;
+    height: 60px;
+    margin: 20px;
+    background: #fff;
+    align-items: center;
+    display: inline-flex;
+    justify-content: center;
+    border-radius: 50%;
+    color: #1f2441;
+    box-shadow: 0 10px 20px #003566;
+    cursor: pointer;
+}
+.controls div:nth-child(2){
+    transform: scale(1.5);
+    background: #1f2441;
+    color: #fff;
+}
+
+.hidden {
+    display: none;
+}
+
+#musicInfo {
+    /* Add styling for music info section */
+    color: #fff;
+    text-align: center;
+    margin-top: 20px;
+    border-radius: 10px;
+    background: transparent;
+    margin-left: 20px;
+    padding: 10px auto 5px;
+    margin-bottom: 10px;
+    
+}
+ul li{
+    list-style: none;
+    font-size: 13px;
+    user-select: none;
+    cursor: pointer;
+    padding: 8px 1px 4px 200px;
+    position: relative;
+}
+#musicInfo h1{
+    font-size: 15px;
+    padding-left: 180px;
+    padding-top: 8px;
+    color: #fff;
+}
+ul li:hover{
+    text-decoration: underline solid 2px #003566;
+}
