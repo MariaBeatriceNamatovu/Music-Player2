@@ -148,7 +148,7 @@ ul li:hover{
 
 @media only screen and (max-width: 600px) {
     .controls div {
-        width: 40px; /* Adjust control button size for smaller screens */
-        height: 40px;
+        width: 30px; /* Adjust control button size for smaller screens */
+        height: 30px;
     }
 }
