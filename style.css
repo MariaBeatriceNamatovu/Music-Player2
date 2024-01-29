@@ -12,16 +12,19 @@
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
-    box-shadow: ;
+    
 }
 .music-player{
     background: linear-gradient(140deg, #01497c, #01497c, #217DDE, #217DDE, #003566);
     width: 400px;
+    max-width: 500px;
+    margin: 0 auto;
     padding: 25px 35px;
     text-align: center;
     border-radius: 10px;
     box-shadow: 0 5px 10px #003566;
 }
+
 nav{
     display: flex;
     justify-content: space-between;
@@ -129,4 +132,16 @@ ul li{
 }
 ul li:hover{
     text-decoration: underline solid 2px #003566;
+}
+
+@media only screen and (max-width: 600px) {
+    .music-player {
+        max-width: 80%; /* Adjust max-width for smaller screens */
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    .music-player {
+        max-width: 90%; /* Further reduce max-width for even smaller screens */
+    }
 }
